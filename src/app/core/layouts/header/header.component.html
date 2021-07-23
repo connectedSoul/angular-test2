@@ -1,0 +1,62 @@
+<p>header works!</p>
+<header class="row header align-items-center">
+
+  <div class="col-3">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        $current_portal <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Produkt A</a>
+        <li class="divider dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Produkt B</a>
+        <li><a class="dropdown-item" href="#">Produkt C</a>
+        <li><a class="dropdown-item" href="#">Produkt D</a>
+        <li><a class="dropdown-item" href="#">Produkt E</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto hub-image">
+        <!--*.svg keeps disappearing in firefox-->
+        <img src="assets/techprogress_banner.svg" width="200px" alt="techprogress Logo">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-3">
+    <div class="dropdown">
+      <button class="btn btn-outline-success" type="button" >$currentUser.name</button>
+      <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split">
+        <span class="caret"></span>
+      </button>
+      <ul id="dropdown-split" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="button-split">
+        <li (click)="navigateTo('userProfile')"> <a class="dropdown-item pointer"><i class="far fa-user"></i>  Profil</a></li>
+        <li (click)="navigateTo('settings')"> <a class="dropdown-item pointer"><i class="far fa-sliders-v"></i>  Einstellungen</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li (click)="logout()"><a class="dropdown-item pointer"><i class="far fa-power-off"></i>  Abmelden</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+</header>
+
+
+

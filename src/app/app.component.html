@@ -1,0 +1,25 @@
+<div class="container-fluid">
+
+  <!--<app-header [currentUser]="currentUser"></app-header>-->
+  <app-header></app-header>
+
+<!--  <ng-container *ngIf="!currentUser">
+    <app-login (loginEvent)="reactToLogin($event)"></app-login>
+  </ng-container>-->
+
+<!--  <ng-container *ngIf="currentUser">-->
+  <ng-container>
+    <div class="row">
+      <div class="col-2 nav-container">
+        <app-navmenu></app-navmenu>
+      </div>
+      <div class="col-10">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </ng-container>
+
+<!--  <app-footer [footerDown]="!currentUser"></app-footer>-->
+  <app-footer></app-footer>
+
+</div>
